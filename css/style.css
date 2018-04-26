@@ -1,0 +1,348 @@
+/* mobile-first */
+
+body {
+    background-color: floralwhite;
+}
+
+#logo {
+    width: 25%;
+    margin-left: 37%
+}
+
+
+/* MENU TAP */
+
+nav {
+    float: left;
+    width: 100%;
+    background: #333;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+nav li a {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+nav li a:hover {
+    background-color: red;
+}
+
+/* forside content */
+
+#mountain {
+    display: none;
+
+}
+
+
+img.profil-billede {
+    text-align: center;
+    width: 50%;
+    height: 15%;
+    margin-left: 23%;
+    border-radius: 8px;
+
+}
+
+#title {
+    text-align: center;
+    margin-top: 35%;
+}
+
+#ommigbox {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+#ommig {
+    text-align: center;
+}
+
+
+.container {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+
+}
+
+.flextitle {
+    text-align: center;
+}
+
+
+/* portfolio */
+
+#portfolio {
+    text-align: center;
+    margin-top: 35%;
+}
+
+
+
+
+#portfolio-pic {
+    text-align: center;
+    font-size: 20px;
+}
+
+.portfolio-pic {
+    font-family: 'Open Sans', Arial, sans-serif;
+    display: inline-block;
+    margin-right: 5%;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: none !important;
+    position: relative;
+    padding: 10px;
+    border: 2px solid #808080;
+    box-sizing: border-box;
+}
+
+.portfolio-pic:before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: -1;
+}
+
+.portfolio-pic * {
+    transition: all 0.35s ease;
+}
+
+.portfolio-pic img {
+    max-width: 100%;
+    vertical-align: top;
+    background-image: linear-gradient(#000000, #ffffff);
+}
+
+.portfolio-pic figcaption,
+.portfolio-pic .link {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.portfolio-pic h2,
+.portfolio-pic h3,
+.portfolio-pic h4 {
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.portfolio-pic h2 {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.portfolio-pic h3 {
+    font-size: 1.3em;
+    bottom: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.portfolio-pic h4 {
+    top: 0;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    opacity: 0.9;
+    font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.portfolio-pic:hover img,
+.portfolio-pic.hover img {
+    opacity: 0.35;
+}
+
+
+
+/* kontakt */
+
+#kontakt-title {
+    text-align: center;
+    margin-top: 35%
+}
+
+
+
+.kontakt {
+    width: 50%;
+
+}
+
+.inputbox {
+    text-align: center;
+}
+
+input {
+    flex-direction: row;
+    width: 40%;
+    text-align: center;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0);
+    border: 1.5px solid #808080;
+
+}
+
+button {
+    padding: 20px 32px;
+    font-size: 16px;
+    background: #808080;
+    border: none;
+    border-radius: 4px;
+    margin-top: 30px;
+    color: black;
+}
+
+
+
+/* media query til PC dektops */
+
+@media (min-width: 1281px) {
+
+    #logo {
+        width: 4%;
+        margin-left: 15px;
+    }
+
+
+
+    nav ul li {
+        text-align: left;
+        font-size: 25px;
+        display: inline;
+
+
+    }
+
+    nav li a {
+        display: inline;
+        padding: 10px 20px;
+
+    }
+
+
+    #mountain {
+        display: block;
+        width: 100%;
+
+    }
+
+
+    #title {
+        margin-top: 1%;
+
+    }
+
+    img.profil-billede {
+        width: 22%;
+        margin-left: 2%;
+
+    }
+
+
+
+    #ommigbox {
+        font-size: 23px;
+        line-height: 40px;
+        width: 50%;
+        margin-top: -600px;
+        margin-left: 600px;
+        margin-bottom: 150px;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+    .flexbox {
+        width: 30%;
+    }
+    .flextitle {
+        font-size: 30px;
+
+    }
+
+    .flexparagraf {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .flexparagraf {
+        font-size: 23px;
+        line-height: 26px;
+    }
+
+
+    #portfolio {
+        margin-top: 2%;
+
+    }
+
+    #kontakt-title {
+        margin-top: 5%
+    }
+    input {
+        display: block;
+        margin-left: 38%;
+        width: 25%;
+
+    }
+
+}
+
+#followme {
+    text-align: center;
+}
+
+
+
+
+.icons {
+    width: 15%;
+
+}
+
+.socialmedie {
+    margin-left: 35%;
+}
+
+
+
+
+
